@@ -39,7 +39,8 @@ The calibration showed that while the Logistic model captured the **shape** and 
 Finally, we applied both models to price a **binary-style exotic payoff** with notional USD 20 million.  
 The payoff depends on the average of forward contracts across the quoted expiries, maturing on **16 November 2022**:
 
-Payoff=1{N1​∑i=1N​Fti​,tN​​>K}​,K=Ft0​,tN​​.
+Payoff=1{(1/N​)*∑Fti​,tN​​ > K}​,  K=Ft0​,tN​​.
+where 𝑡𝑖, 𝑖=1,…,𝑁 are the expiries of the quoted European options (with 𝑡𝑁 equal to the 16th November 2022) and 𝐹𝑡𝑖,𝑡𝑁 is defined as the forward expiring in 𝑡𝑁 valued at time 𝑡i.
 
 Pricing was performed via **Monte Carlo simulations** using the **Lewis-FFT method** to generate paths from the calibrated characteristic functions.  
 
