@@ -23,7 +23,7 @@ In this project, we implemented the **Additive Bachelier model**, characterized 
   1. **ATM volatilities** were matched first.
   2. **Smile parameters** η (skewness) and κ (vol-of-vol) were estimated using out-of-the-money options.
 
-The model successfully reproduced the observed volatility term structure, with η capturing the strong left skew of the market and κ providing curvature consistent with volatility smiles.  
+The model successfully reproduced the observed volatility term structure, with η capturing the left skew of the market and κ providing curvature consistent with volatility smiles.  
 
 ---
 
